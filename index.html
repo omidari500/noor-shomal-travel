@@ -3,70 +3,207 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>نور شمال للسياحة والسفر</title>
-<link rel="stylesheet" href="style.css">
+<title>نور شمال | للسياحة والسفر</title>
+<meta name="description" content="نور شمال للسياحة والسفر — رحلات خاصة في إيران وخدمات إقامة وسائق وسيارة للمسافرين من دول الخليج.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#071d35;--navy2:#0d2948;--gold:#d8a62a;--ink:#101b2b;--muted:#687386;--line:#e8edf3;--bg:#f5f7fa;--white:#fff;--shadow:0 10px 30px rgba(8,28,52,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Cairo,Tahoma,Arial,sans-serif}
+a{text-decoration:none;color:inherit}.wrap{max-width:1450px;margin:auto;padding:0 18px}
+.top{background:#06192e;color:#fff;position:sticky;top:0;z-index:30;box-shadow:0 2px 16px #00122655}
+.nav{height:74px;display:flex;align-items:center;gap:24px}
+.logo{display:flex;align-items:center;gap:10px;margin-left:auto}.logo-mark{width:48px;height:42px;position:relative}
+.logo-mark:before,.logo-mark:after{content:"";position:absolute;bottom:5px;border-style:solid;transform:rotate(0)}
+.logo-mark:before{left:1px;border-width:0 20px 28px 20px;border-color:transparent transparent #e0ad2c transparent}
+.logo-mark:after{left:15px;bottom:0;border-width:0 16px 22px 16px;border-color:transparent transparent #fff transparent}
+.logo strong{font-size:20px;line-height:1}.logo span{display:block;color:#e0ad2c;font-size:11px;font-weight:700;margin-top:4px}
+.links{display:flex;align-items:center;gap:25px;font-size:14px;font-weight:700}.links a{opacity:.95}.links a:hover{color:#e7b83a}
+.flags{display:flex;gap:7px;margin-right:15px}.flag{font-size:21px;filter:saturate(1.15)}
+.social{display:flex;gap:9px;margin-right:auto}.social a{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:#fff;color:#075e54;transition:.2s}.social a:hover{transform:translateY(-2px)}.social .ig{color:#c13584}
+.hero{min-height:560px;display:grid;place-items:center;text-align:center;color:#fff;position:relative;overflow:hidden;background:
+linear-gradient(180deg,rgba(3,20,38,.38),rgba(3,20,38,.72)),
+url("https://media.arabicradio.net/original/2019/08/26/637024181535528205.jpg") center/cover}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:90px;background:linear-gradient(transparent,var(--bg))}
+.hero-content{position:relative;z-index:2;max-width:850px;padding:80px 20px}
+.hero h1{font-size:64px;line-height:1.05;margin:0;font-weight:800;text-shadow:0 4px 20px #0008}.hero .gold{color:#e5b13a;font-size:32px;font-weight:800;margin:12px 0}.hero p{font-size:20px;line-height:2;margin:12px auto;max-width:720px}.hero-actions{display:flex;justify-content:center;gap:12px;margin-top:28px}.btn{border:0;border-radius:12px;padding:13px 25px;font-family:inherit;font-weight:800;cursor:pointer}.btn.gold{background:var(--gold);color:#fff}.btn.dark{background:#ffffffee;color:var(--navy)}
+.stats{background:#fff;display:grid;grid-template-columns:repeat(4,1fr);box-shadow:var(--shadow);position:relative;z-index:3;margin-top:-22px;border-radius:16px;overflow:hidden}.stat{padding:24px 18px;text-align:center;border-left:1px solid var(--line)}.stat:last-child{border:0}.stat .ico{font-size:31px;margin-bottom:5px}.stat b{display:block;font-size:16px}.stat small{color:var(--muted);font-size:12px}
+.section{padding:56px 0}.title{text-align:center;margin-bottom:30px}.title h2{font-size:31px;margin:0 0 8px}.title p{color:var(--muted);margin:0}
+.destinations{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}.city{height:280px;border-radius:13px;overflow:hidden;position:relative;box-shadow:var(--shadow);background:#ddd;cursor:pointer}.city img{width:100%;height:100%;object-fit:cover;transition:.35s}.city:hover img{transform:scale(1.05)}.city:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#03182de8)}.city .caption{position:absolute;z-index:2;bottom:14px;right:14px;left:14px;color:#fff}.city h3{margin:0 0 10px;font-size:21px}.discover{display:inline-block;background:#fff;color:var(--navy);padding:5px 18px;border-radius:20px;font-size:11px;font-weight:800}
+.tours{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.tour{background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}.tour img{width:100%;height:175px;object-fit:cover}.tour-body{padding:15px}.tour h3{margin:0 0 7px;font-size:17px}.tour p{color:var(--muted);font-size:12px;line-height:1.8;margin:0 0 12px}.tour .more{color:#a87709;font-weight:800;font-size:12px}
+.why{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:stretch}.why-card{background:#fff;border-radius:15px;padding:28px;box-shadow:var(--shadow);border:1px solid var(--line)}.why-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.why-item{border:1px solid var(--line);border-radius:12px;padding:17px}.why-item b{display:block;margin-bottom:4px}.why-item p{margin:0;color:var(--muted);font-size:12px;line-height:1.8}.cta{background:linear-gradient(135deg,var(--navy),#0e3459);color:#fff;border-radius:15px;padding:32px;display:flex;flex-direction:column;justify-content:center}.cta h3{font-size:25px;margin:0 0 12px}.cta p{color:#d9e3ef;line-height:2;font-size:13px}.wa-btn{background:#20b95a;color:#fff;border:0;border-radius:10px;padding:13px 18px;font-family:inherit;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.footer{background:#06192e;color:#fff;text-align:center;padding:26px 18px;margin-top:10px}.footer strong{color:#e2ad30}.footer p{margin:6px 0;color:#d2dbe6;font-size:12px}
+.page{display:none}.page.active{display:block}.page-hero{height:300px;color:#fff;display:flex;align-items:end;position:relative;background-position:center;background-size:cover}.page-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(transparent,#03182de8)}.page-hero .inner{position:relative;z-index:2;padding:30px 0;width:100%}.page-hero h1{margin:0;font-size:42px}.page-hero p{margin:6px 0 0;color:#e9eef5}.back{display:inline-flex;gap:6px;color:#fff;font-size:12px;margin-bottom:10px}
+.places{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.place{background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}.place img{width:100%;height:175px;object-fit:cover}.place-body{padding:14px}.place h3{font-size:16px;margin:0 0 6px}.place p{font-size:11px;line-height:1.8;color:var(--muted);margin:0}
+.note{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:14px;padding:20px;margin-bottom:20px;line-height:2;font-size:13px}
+@media(max-width:1100px){.destinations{grid-template-columns:repeat(3,1fr)}.tours{grid-template-columns:repeat(2,1fr)}.places{grid-template-columns:repeat(3,1fr)}.links{gap:14px}.why{grid-template-columns:1fr}}
+@media(max-width:760px){.nav{height:auto;min-height:70px;flex-wrap:wrap;padding:10px 0}.links{order:3;width:100%;justify-content:center;overflow:auto;padding-bottom:6px}.flags{margin-right:0}.social{margin-right:0}.hero{min-height:520px}.hero h1{font-size:44px}.hero .gold{font-size:25px}.hero p{font-size:15px}.stats{grid-template-columns:repeat(2,1fr)}.stat{border-bottom:1px solid var(--line)}.destinations,.places{grid-template-columns:repeat(2,1fr)}.tours{grid-template-columns:1fr}.page-hero h1{font-size:32px}.why-list{grid-template-columns:1fr}}
+@media(max-width:470px){.destinations,.places{grid-template-columns:1fr}.city{height:250px}.hero h1{font-size:38px}.logo strong{font-size:17px}.flags{gap:3px}.flag{font-size:18px}}
+</style>
 </head>
 <body>
-<header>
-  <div class="brand"><div class="logo">◢☼</div><div><b>نور شمال</b><small>للسياحة والسفر</small></div></div>
-  <nav><a href="#home">الصفحة الرئيسية</a><a href="#about">من نحن</a><a href="#programs">برامج الرحلات</a><a href="#cities">المدن</a><a href="#contact">تواصل معنا</a></nav>
-  <div class="flags" aria-label="الأسواق المستهدفة"><span>🇴🇲</span><span>🇮🇶</span><span>🇰🇼</span><span>🇶🇦</span><span>🇦🇪</span></div>
+<header class="top">
+  <div class="wrap nav">
+    <div class="logo">
+      <div class="logo-mark"></div>
+      <div><strong>نور شمال</strong><span>للسياحة والسفر</span></div>
+    </div>
+    <nav class="links">
+      <a href="#" onclick="showHome();return false">الصفحة الرئيسية</a>
+      <a href="#destinations">المدن</a>
+      <a href="#tours">برامج الرحلات</a>
+      <a href="#about">من نحن</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <div class="flags" aria-label="الدول المستهدفة"><span class="flag">🇴🇲</span><span class="flag">🇮🇶</span><span class="flag">🇰🇼</span><span class="flag">🇶🇦</span><span class="flag">🇦🇪</span></div>
+    <div class="social">
+      <a href="https://wa.me/989397162609" target="_blank" aria-label="واتساب">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 11.5a8.5 8.5 0 0 1-12.7 7.4L3 20l1.2-4.2A8.5 8.5 0 1 1 20 11.5Z"/><path d="M8.4 8.1c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.6 1.4c.1.2.1.4 0 .6l-.4.6c.7 1.3 1.7 2.2 3 2.9l.6-.4c.2-.1.4-.1.6 0l1.4.6c.3.1.4.3.4.5v.5c0 .3-.1.5-.4.7-.4.2-1 .3-1.6.1-2.8-.7-5.4-3.3-6.2-6.1-.2-.7-.1-1.3.3-1.8Z"/></svg>
+      </a>
+      <a class="ig" href="https://www.instagram.com/omidtravel.iran/" target="_blank" aria-label="إنستغرام">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+      </a>
+    </div>
+  </div>
 </header>
 
-<main id="home">
+<main id="home" class="page active">
 <section class="hero">
   <div class="hero-content">
-    <h1>نور شمال</h1><h2>للسياحة والسفر</h2>
-    <p>اكتشف جمال إيران مع برامج سفر مميزة<br>وخدمات احترافية</p>
-    <div class="social"><a class="wa" href="https://wa.me/989397162609" target="_blank">◉</a><a class="ig" href="https://instagram.com/omidtravel.iran" target="_blank">◎</a></div>
+    <h1>نور شمال</h1>
+    <div class="gold">للسياحة والسفر</div>
+    <p>اكتشف جمال إيران مع برامج سفر خاصة وخدمات احترافية للمسافرين من دول الخليج</p>
+    <div class="hero-actions">
+      <button class="btn gold" onclick="document.querySelector('#destinations').scrollIntoView()">اكتشف وجهاتنا</button>
+      <a class="btn dark" href="https://wa.me/989397162609" target="_blank">تواصل عبر واتساب</a>
+    </div>
   </div>
 </section>
+<div class="wrap">
+  <section class="stats">
+    <div class="stat"><div class="ico">♡</div><b>رضا المسافرين</b><small>نحرص على تجربة مريحة ومميزة</small></div>
+    <div class="stat"><div class="ico">🚗</div><b>سائقون موثوقون</b><small>خدمة نقل خاصة طوال الرحلة</small></div>
+    <div class="stat"><div class="ico">♧</div><b>فريق متخصص</b><small>مساعدة وتنظيم حسب احتياجكم</small></div>
+    <div class="stat"><div class="ico">✓</div><b>10 سنوات من الخبرة</b><small>خبرة في السياحة والخدمات السياحية</small></div>
+  </section>
+</div>
 
-<section class="trust">
-  <div><strong>رضا المسافرين</strong><small>رضا وراحة مسافرينا هي هدفنا الأول</small></div>
-  <div><strong>سائقون موثوقون</strong><small>سائقون ذوو خبرة لرحلة آمنة ومريحة</small></div>
-  <div><strong>فريق عمل متخصص</strong><small>فريقنا يقدم أفضل الاستشارات والخدمات</small></div>
-  <div><strong>10 سنوات من الخبرة</strong><small>أكثر من 10 سنوات في مجال السياحة والخدمات</small></div>
-</section>
-
-<section id="cities" class="section">
-<h2>وجهاتنا السياحية</h2>
-<div class="city-grid">
-  <a href="#gilan" class="city" style="--img:url('https://loremflickr.com/700/900/gilan,iran?lock=11')"><b>جيلان</b><span>استكشف</span></a>
-  <a href="#kelardasht" class="city" style="--img:url('https://loremflickr.com/700/900/kelardasht,iran?lock=12')"><b>كلاردشت</b><span>استكشف</span></a>
-  <a href="#tehran" class="city" style="--img:url('https://loremflickr.com/700/900/tehran,iran?lock=13')"><b>طهران</b><span>استكشف</span></a>
-  <a href="#shiraz" class="city" style="--img:url('https://loremflickr.com/700/900/shiraz,iran?lock=14')"><b>شيراز</b><span>استكشف</span></a>
-  <a href="#isfahan" class="city" style="--img:url('https://loremflickr.com/700/900/isfahan,iran?lock=15')"><b>أصفهان</b><span>استكشف</span></a>
-  <a href="#tabriz" class="city" style="--img:url('https://loremflickr.com/700/900/tabriz,iran?lock=16')"><b>تبريز</b><span>استكشف</span></a>
+<section id="destinations" class="section">
+<div class="wrap">
+  <div class="title"><h2>وجهاتنا السياحية</h2><p>اختر المدينة واستكشف أهم الأماكن السياحية والبرامج المقترحة</p></div>
+  <div class="destinations">
+    <div class="city" onclick="showCity('gilan')"><img src="https://surfiran.com/mag/wp-content/uploads/2024/05/Ghazian-Bridge-of-Anzali-1.jpg"><div class="caption"><h3>جيلان</h3><span class="discover">استكشف</span></div></div>
+    <div class="city" onclick="showCity('kelardasht')"><img src="https://www.irandestination.com/wp-content/uploads/2020/09/lake-velesht-kelardasht-iran-destination.jpg"><div class="caption"><h3>كلاردشت</h3><span class="discover">استكشف</span></div></div>
+    <div class="city" onclick="showCity('tehran')"><img src="https://media.izi.travel/77942533-01b8-4501-8ecd-a6be2980c815/a186ef36-200c-4882-ada1-4ab6466220af_800x600.jpg"><div class="caption"><h3>طهران</h3><span class="discover">استكشف</span></div></div>
+    <div class="city" onclick="showCity('shiraz')"><img src="https://images.thenightly.com.au/publication/C-15606715/c7a083a57fb425d79731df3cff40cbecaa62aa4b-4x3-x626y0w4265h3199.jpg"><div class="caption"><h3>شيراز</h3><span class="discover">استكشف</span></div></div>
+    <div class="city" onclick="showCity('isfahan')"><img src="https://parametric-architecture.com/wp-content/uploads/2024/03/Ishafan-Bird-View.jpg"><div class="caption"><h3>أصفهان</h3><span class="discover">استكشف</span></div></div>
+    <div class="city" onclick="showCity('tabriz')"><img src="https://cdn.gezbegen.com/wp-content/uploads/2019/12/tebrizz.jpg"><div class="caption"><h3>تبريز</h3><span class="discover">استكشف</span></div></div>
+  </div>
 </div>
 </section>
 
-<section id="programs" class="section programs">
-<h2>برامج الرحلات</h2>
-<div class="program-grid">
-  <article><img src="https://loremflickr.com/700/450/masal,iran?lock=31"><h3>رحلة الشمال</h3><p>5 أيام - 4 ليالٍ</p><small>جيلان - كلاردشت - رامسر</small><button>عرض التفاصيل</button></article>
-  <article><img src="https://loremflickr.com/700/450/isfahan,iran?lock=32"><h3>إيران الكلاسيكية</h3><p>7 أيام - 6 ليالٍ</p><small>طهران - شيراز - أصفهان - تبريز</small><button>عرض التفاصيل</button></article>
-  <article><img src="https://loremflickr.com/700/450/persepolis,iran?lock=33"><h3>رحلة التراث الإيراني</h3><p>8 أيام - 7 ليالٍ</p><small>طهران - أصفهان - شيراز - كرمان</small><button>عرض التفاصيل</button></article>
-  <article><img src="https://loremflickr.com/700/450/kelardasht,iran?lock=34"><h3>رحلة جيلان الخضراء</h3><p>6 أيام - 5 ليالٍ</p><small>رشت - ماسال - أستارا - لاهيجان</small><button>عرض التفاصيل</button></article>
+<section id="tours" class="section" style="padding-top:0">
+<div class="wrap">
+<div class="title"><h2>برامج الرحلات</h2><p>برامج خاصة يمكن تعديلها حسب عدد المسافرين ومدة الرحلة</p></div>
+<div class="tours">
+  <article class="tour"><img src="https://www.irandestination.com/wp-content/uploads/2020/09/lake-velesht-kelardasht-iran-destination.jpg"><div class="tour-body"><h3>رحلة شمال إيران</h3><p>٥ أيام • ٤ ليالٍ<br>جيلان – كلاردشت – رامسر</p><a class="more" href="#destinations">عرض التفاصيل</a></div></article>
+  <article class="tour"><img src="https://media.izi.travel/77942533-01b8-4501-8ecd-a6be2980c815/a186ef36-200c-4882-ada1-4ab6466220af_800x600.jpg"><div class="tour-body"><h3>طهران والمدن</h3><p>٤ أيام • ٣ ليالٍ<br>طهران مع أهم المعالم السياحية</p><a class="more" href="#destinations">عرض التفاصيل</a></div></article>
+  <article class="tour"><img src="https://images.thenightly.com.au/publication/C-15606715/c7a083a57fb425d79731df3cff40cbecaa62aa4b-4x3-x626y0w4265h3199.jpg"><div class="tour-body"><h3>إيران الكلاسيكية</h3><p>٧ أيام • ٦ ليالٍ<br>طهران – شيراز – أصفهان – تبريز</p><a class="more" href="#destinations">عرض التفاصيل</a></div></article>
+  <article class="tour"><img src="https://media.arabicradio.net/original/2023/06/14/638223354498435561.jpg"><div class="tour-body"><h3>رحلة العائلة</h3><p>٥ أيام • ٦ ليالٍ<br>برنامج مرن مع خدمات خاصة للعائلة</p><a class="more" href="https://wa.me/989397162609" target="_blank">اطلب البرنامج</a></div></article>
+</div>
 </div>
 </section>
 
-<section id="about" class="about">
-<div><h2>من نحن</h2><p>نحن فريق من المتخصصين في السياحة والسفر داخل إيران، نمتلك أكثر من 10 سنوات من الخبرة في تنظيم الرحلات وتقديم أفضل الخدمات للمسافرين من دول الخليج.</p><p>نهتم براحة المسافر، ونوفر برامج مخصصة، إقامة مناسبة، سائقين موثوقين وخدمة احترافية من لحظة الوصول حتى المغادرة.</p></div>
-<div class="why"><h2>لماذا تختار نور شمال؟</h2><p>✓ برامج سفر مخصصة حسب رغبتك</p><p>✓ حجز الفنادق بأفضل الأسعار</p><p>✓ خدمات النقل والسائق الخاص</p><p>✓ دعم ومتابعة على مدار 24 ساعة</p><div class="social"><a class="wa" href="https://wa.me/989397162609">◉</a><a class="ig" href="https://instagram.com/omidtravel.iran">◎</a></div></div>
-</section>
-
-<section class="destinations">
-  <section id="gilan" class="destination"><h2>السياحة في جيلان</h2><div class="place-grid"><div class="place" style="--img:url('https://loremflickr.com/600/360/ماسال,Iran?lock=150')"><b>ماسال</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/جنگل+گیسوم,Iran?lock=151')"><b>جنگل گیسوم</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/مرداب+سراوان,Iran?lock=152')"><b>مرداب سراوان</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/أستارا,Iran?lock=153')"><b>أستارا</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/السوق+المركزي+لأستارا,Iran?lock=154')"><b>السوق المركزي لأستارا</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/گردنه+حیران,Iran?lock=155')"><b>گردنه حیران</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/ماسولة,Iran?lock=156')"><b>ماسولة</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/قلعة+رودخان,Iran?lock=157')"><b>قلعة رودخان</b></div></div></section>
-  <section id="kelardasht" class="destination"><h2>السياحة في كلاردشت</h2><div class="place-grid"><div class="place" style="--img:url('https://loremflickr.com/600/360/مدينة+كلاردشت,Iran?lock=200')"><b>مدينة كلاردشت</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/دریاچه+ولشت,Iran?lock=201')"><b>دریاچه ولشت</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/نمک+آبرود,Iran?lock=202')"><b>نمک آبرود</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/طريق+عباس+آباد,Iran?lock=203')"><b>طريق عباس آباد</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/مرداب+دیوک,Iran?lock=204')"><b>مرداب دیوک</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/رودبارک,Iran?lock=205')"><b>رودبارک</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/رامسر,Iran?lock=206')"><b>رامسر</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/دو+هزار+و+سه+هزار,Iran?lock=207')"><b>دو هزار و سه هزار</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/أبي+در,Iran?lock=208')"><b>أبي در</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/ساحل+متل+قو,Iran?lock=209')"><b>ساحل متل قو</b></div></div></section>
-  <section id="shiraz" class="destination"><h2>السياحة في شيراز</h2><div class="place-grid"><div class="place" style="--img:url('https://loremflickr.com/600/360/تخت+جمشید,Iran?lock=160')"><b>تخت جمشید</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/مقبرة+كوروش,Iran?lock=161')"><b>مقبرة كوروش</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/نارنجستان+قوام,Iran?lock=162')"><b>نارنجستان قوام</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/حافظية,Iran?lock=163')"><b>حافظية</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/سعدية,Iran?lock=164')"><b>سعدية</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/شاهچراغ,Iran?lock=165')"><b>شاهچراغ</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/بازار+وكيل,Iran?lock=166')"><b>بازار وكيل</b></div></div></section>
-  <section id="isfahan" class="destination"><h2>السياحة في أصفهان</h2><div class="place-grid"><div class="place" style="--img:url('https://loremflickr.com/600/360/نقش+جهان,Iran?lock=170')"><b>نقش جهان</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/مسجد+الشيخ+لطف+الله,Iran?lock=171')"><b>مسجد الشيخ لطف الله</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/مسجد+شاه,Iran?lock=172')"><b>مسجد شاه</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/جسر+سي+وسه+پل,Iran?lock=173')"><b>جسر سي وسه پل</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/جسر+خواجو,Iran?lock=174')"><b>جسر خواجو</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/كليسا+وانك,Iran?lock=175')"><b>كليسا وانك</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/چهارباغ,Iran?lock=176')"><b>چهارباغ</b></div></div></section>
-  <Destination id="tabriz" title="السياحة في تبريز وزنجان وأردبيل" items="بازار تبريز|مسجد كبود|إيل گولي|كندوان|رشت؟|بازار زنجان|گنبد سلطانية|أردبيل|سرعين"/>
-  <section id="tehran" class="destination"><h2>السياحة في طهران</h2><div class="place-grid"><div class="place" style="--img:url('https://loremflickr.com/600/360/برج+ميلاد,Iran?lock=160')"><b>برج ميلاد</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/برج+آزادي,Iran?lock=161')"><b>برج آزادي</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/بازار+طهران,Iran?lock=162')"><b>بازار طهران</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/كاخ+گلستان,Iran?lock=163')"><b>كاخ گلستان</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/دربند,Iran?lock=164')"><b>دربند</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/تجريش,Iran?lock=165')"><b>تجريش</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/پل+طبيعت,Iran?lock=166')"><b>پل طبيعت</b></div><div class="place" style="--img:url('https://loremflickr.com/600/360/إيران+مال,Iran?lock=167')"><b>إيران مال</b></div></div></section>
+<section id="about" class="section" style="padding-top:0">
+<div class="wrap">
+<div class="why">
+<div class="why-card">
+<div class="title" style="text-align:right;margin-bottom:20px"><h2>لماذا تختار نور شمال؟</h2><p>خدمة سياحية خاصة نهتم فيها بالتفاصيل من أول يوم إلى نهاية الرحلة</p></div>
+<div class="why-list">
+<div class="why-item"><b>10 سنوات من الخبرة</b><p>خبرة عملية في تنظيم الرحلات والخدمات السياحية داخل إيران.</p></div>
+<div class="why-item"><b>فريق موثوق ومحترف</b><p>نعمل مع أشخاص موثوقين لضمان الراحة والأمان وحسن التعامل.</p></div>
+<div class="why-item"><b>برامج حسب رغبتكم</b><p>نصمم البرنامج وفق عدد الأشخاص والمدة والوجهات التي تفضلونها.</p></div>
+<div class="why-item"><b>اهتمام بالمسافر</b><p>متابعة ومساعدة خلال الرحلة لتكون التجربة مريحة وواضحة.</p></div>
+</div>
+</div>
+<div class="cta" id="contact"><h3>جاهزون لتنظيم رحلتكم؟</h3><p>أرسل لنا عدد المسافرين والمدة والمدينة التي ترغبون بزيارتها، وسنقترح لكم برنامجاً مناسباً.</p><a class="wa-btn" href="https://wa.me/989397162609" target="_blank">تواصل معنا عبر واتساب</a></div>
+</div>
+</div>
 </section>
 </main>
 
-<footer id="contact">نور شمال للسياحة والسفر - نرافقكم في أجمل رحلة<br><small>جميع الحقوق محفوظة © 2026</small></footer>
-<script>function Destination(){return ''}</script>
+<div id="cityPage" class="page"></div>
+
+<footer class="footer"><strong>نور شمال للسياحة والسفر</strong><p>برامج سياحية خاصة وخدمات إقامة وسائق وسيارة في إيران</p><p>© 2026 جميع الحقوق محفوظة</p></footer>
+
+<script>
+const data={
+gilan:{name:"السياحة في جيلان",desc:"طبيعة خضراء، غابات، شواطئ ومدن جميلة على بحر قزوين.",hero:"https://surfiran.com/mag/wp-content/uploads/2024/05/Ghazian-Bridge-of-Anzali-1.jpg",places:[
+["ماسال","https://media.arabicradio.net/original/2023/06/14/638223354498435561.jpg","مرتفعات خضراء وقرى خشبية وإطلالات ساحرة على بحر الغيوم."],
+["غابة غيسوم","https://i.pinimg.com/736x/55/a9/79/55a97970ca277d4b0bea11d5a37b5819.jpg","طريق غابي أخضر يصل بين الغابة وساحل بحر قزوين."],
+["مرداب سراوان","https://en.ifilmtv.ir/UploadedFiles/Images/23-07-2021/11_09_524.jpg","بحيرة خضراء وسط الغابة مع أجواء هادئة وتجربة القوارب."],
+["أستارا","https://fa.tripyar.com/uploads/picture/2290/astara-2.jpg","مدينة حدودية جميلة مع أسواق محلية وأجواء بحرية."],
+["البازار الحدودي في أستارا","https://fa.tripyar.com/uploads/picture/2290/astara-2.jpg","من أشهر أماكن التسوق الشعبي في المنطقة الحدودية."],
+["گردنه حیران","https://media.arabicradio.net/original/2019/08/26/637024181535528205.jpg","طريق جبلي شهير بإطلالاته الخضراء بين أستارا وأردبيل."],
+["ماسولة","https://media.arabicradio.net/original/2023/06/14/638223354498435561.jpg","قرية جبلية تاريخية بعمارة مدرجة ومناظر طبيعية مميزة."],
+["قلعه رودخان","https://i.pinimg.com/736x/55/a9/79/55a97970ca277d4b0bea11d5a37b5819.jpg","قلعة تاريخية وسط غابات فومن الخضراء."]
+]},
+kelardasht:{name:"السياحة في كلاردشت",desc:"الجبال والبحيرات والأنهار والطرق الخضراء في شمال إيران.",hero:"https://www.irandestination.com/wp-content/uploads/2020/09/lake-velesht-kelardasht-iran-destination.jpg",places:[
+["مدينة كلاردشت","https://iranonlinebooking.com/files/static/1139-w5zabur13w113b.jpg","منطقة جبلية خضراء تتميز بالأنهار والقرى والمناظر البانورامية."],
+["دریاچه ولشت","https://www.irandestination.com/wp-content/uploads/2020/09/lake-velesht-kelardasht-iran-destination.jpg","بحيرة جبلية هادئة تحيط بها المرتفعات الخضراء."],
+["نمک‌آبرود","https://www.irancultura.it/wp-content/uploads/2018/04/Mazandaran-Telecabina-Di-Namak-Abrud-4-min.jpg","تجربة التلفريك والمناظر الجبلية في واحدة من أشهر وجهات الشمال."],
+["طريق عباس آباد","https://blog.flysepehran.com/wp-content/uploads/2024/10/abbas-abad-kelardasht-1.webp","طريق غابي رائع بين كلاردشت وعباس آباد."],
+["مرداب دیوک","https://soraya.news/images/news/145274/thumbs/145274.jpg","مرداب طبيعي وسط الغابات بأجواء ضبابية هادئة."],
+["رودبارک","https://www.hoomanb.com/pictures/iran/img_1166.jpg","نهر جبلي وصخور ومياه جارية بين جبال البرز."],
+["رامسر","https://media.arabicradio.net/original/2019/08/26/637024181535528205.jpg","ساحل بحر قزوين والطبيعة الخضراء والمدينة الساحلية الجميلة."],
+["دو هزار و سه هزار","https://blog.flysepehran.com/wp-content/uploads/2024/10/abbas-abad-kelardasht-1.webp","طرق جبلية وغابات كثيفة ومناظر طبيعية في غرب مازندران."],
+["آبي در","https://www.hoomanb.com/pictures/iran/img_1166.jpg","مناظر نهرية وجبلية مناسبة للتصوير والاستمتاع بالطبيعة."],
+["ساحل متل قو","https://media.arabicradio.net/original/2019/08/26/637024181535528205.jpg","شاطئ ومشهد ساحلي مميز على بحر قزوين."]
+]},
+shiraz:{name:"السياحة في شيراز",desc:"مدينة الشعر والحدائق والآثار الفارسية القديمة.",hero:"https://images.thenightly.com.au/publication/C-15606715/c7a083a57fb425d79731df3cff40cbecaa62aa4b-4x3-x626y0w4265h3199.jpg",places:[
+["تخت جمشيد","https://images.thenightly.com.au/publication/C-15606715/c7a083a57fb425d79731df3cff40cbecaa62aa4b-4x3-x626y0w4265h3199.jpg","عاصمة احتفالات الإمبراطورية الأخمينية وأحد أشهر آثار إيران."],
+["مقبرة كورش الكبير","https://www.gettyimages.com/","مقبرة كورش في باسارغاد، من أبرز المعالم التاريخية في فارس القديمة."],
+["نارنجستان قوام","https://orienttrips.com/mag/wp-content/uploads/2023/09/Hafez-3-1024x683.jpg","حديقة وقصر تاريخي مشهوران بالعمارة الفارسية والحدائق الجميلة."],
+["حافظية","https://orienttrips.com/mag/wp-content/uploads/2023/09/Hafez-3-1024x683.jpg","مزار الشاعر حافظ وحديقة هادئة في قلب شيراز."]
+]},
+isfahan:{name:"السياحة في أصفهان",desc:"المدينة التاريخية ذات العمارة الصفوية والساحات والمساجد الرائعة.",hero:"https://parametric-architecture.com/wp-content/uploads/2024/03/Ishafan-Bird-View.jpg",places:[
+["ميدان نقش جهان","https://www.vecernji.hr/media/img/c7/89/c7ad2ba38415ba8e09d4.jpeg","من أشهر الساحات التاريخية في إيران وتحيط بها معالم صفوية شهيرة."],
+["مسجد شاه","https://www.vecernji.hr/media/img/c7/89/c7ad2ba38415ba8e09d4.jpeg","من روائع العمارة الإسلامية والفسيفساء الفارسية في أصفهان."],
+["مسجد الشيخ لطف الله","https://www.vecernji.hr/media/img/c7/89/c7ad2ba38415ba8e09d4.jpeg","مسجد تاريخي ذو قبة وزخارف داخلية مميزة."],
+["قصر عالي قاپو","https://parametric-architecture.com/wp-content/uploads/2024/03/Ishafan-Bird-View.jpg","قصر صفوي يطل على ميدان نقش جهان."],
+["جسر سي و سه پل","https://media.arabicradio.net/original/2019/08/26/637024181535528205.jpg","جسر تاريخي فوق نهر زاينده رود."],
+["جسر خواجو","https://media.arabicradio.net/original/2019/08/26/637024181535528205.jpg","من أشهر جسور أصفهان التاريخية ومكان جميل للمشي."]
+]},
+tabriz:{name:"السياحة في تبريز وزنجان وأردبيل",desc:"رحلة تجمع بين تبريز وقريتها الصخرية كندوان وزنجان وأردبيل.",hero:"https://cdn.gezbegen.com/wp-content/uploads/2019/12/tebrizz.jpg",places:[
+["تبريز","https://cdn.gezbegen.com/wp-content/uploads/2019/12/tebrizz.jpg","مدينة تاريخية في شمال غرب إيران ومركز مهم للتجارة والثقافة."],
+["قرية كندوان","https://shadmag.com/wp-content/uploads/2024/04/11zon_cropped-2024-04-04T164958.415.jpeg","قرية صخرية فريدة ببيوت منحوتة داخل الصخور البركانية."],
+["بازار تبريز الكبير","https://gezimanya.com/sites/default/files/styles/800x600_/public/gezi-notu/2019-11/image-5_496.jpg","سوق تاريخي مسقوف من أشهر الأسواق في إيران."],
+["مبنى بلدية تبريز","https://cdn.gezbegen.com/wp-content/uploads/2019/12/tebrizz.jpg","أحد المعالم المعمارية المعروفة في وسط تبريز."],
+["گنبد سلطانیه – زنجان","https://deih43ym53wif.cloudfront.net/large_soltaniyeh-zanjan-iran-shutterstock_1207723813_1f30dfef72.jpeg","قبة تاريخية شهيرة من العصر الإيلخاني قرب زنجان."],
+["مزار الشيخ صفي – أردبيل","https://irangashttour.com/wp-content/uploads/2021/05/Sheikh-Safi-Shine.jpg","مجموعة تاريخية صفوية مهمة في قلب أردبيل."]
+]},
+tehran:{name:"السياحة في طهران",desc:"العاصمة الحديثة، المتاحف، الأسواق والمعالم الحضرية.",hero:"https://media.izi.travel/77942533-01b8-4501-8ecd-a6be2980c815/a186ef36-200c-4882-ada1-4ab6466220af_800x600.jpg",places:[
+["برج ميلاد","https://media.izi.travel/77942533-01b8-4501-8ecd-a6be2980c815/a186ef36-200c-4882-ada1-4ab6466220af_800x600.jpg","أحد رموز طهران وإطلالة بانورامية على المدينة."],
+["جسر الطبيعة","https://media.izi.travel/77942533-01b8-4501-8ecd-a6be2980c815/a186ef36-200c-4882-ada1-4ab6466220af_800x600.jpg","جسر حديث فوق حدائق عباس آباد ومكان مميز للتنزه والتصوير."],
+["البازار الكبير","https://gezimanya.com/sites/default/files/styles/800x600_/public/gezi-notu/2019-11/image-5_496.jpg","من أشهر أسواق العاصمة وأكثرها حيوية."],
+["قصر گلستان","https://orienttrips.com/mag/wp-content/uploads/2023/09/Hafez-3-1024x683.jpg","مجمع تاريخي في قلب طهران يجمع العمارة والحدائق والفنون."]
+]}
+};
+
+function showHome(){
+ document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
+ document.getElementById('home').classList.add('active');
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+function showCity(id){
+ const d=data[id]; if(!d)return;
+ const p=document.getElementById('cityPage');
+ p.innerHTML=`<section class="page-hero" style="background-image:url('${d.hero}')"><div class="wrap inner"><a class="back" href="#" onclick="showHome();return false">← العودة إلى الوجهات</a><h1>${d.name}</h1><p>${d.desc}</p></div></section>
+ <section class="section"><div class="wrap"><div class="note"><b>اكتشف معنا أجمل الأماكن</b><br>${d.desc} يمكننا إعداد برنامج خاص يناسب عدد المسافرين ومدة الرحلة، مع خدمات السائق والسيارة والإقامة حسب الطلب.</div><div class="places">${d.places.map(x=>`<article class="place"><img loading="lazy" src="${x[1]}" alt="${x[0]}"><div class="place-body"><h3>${x[0]}</h3><p>${x[2]}</p></div></article>`).join('')}</div></div></section>`;
+ document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
+ p.classList.add('active'); window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
 </body>
 </html>
