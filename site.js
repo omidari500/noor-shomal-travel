@@ -1,8 +1,7 @@
 
-document.querySelectorAll('[data-menu]').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    const nav=document.querySelector('.links');
-    nav.style.display = nav.style.display==='flex' ? '' : 'flex';
-    if(nav.style.display==='flex'){nav.style.position='absolute';nav.style.top='74px';nav.style.right='4%';nav.style.left='4%';nav.style.background='#f8f5ed';nav.style.padding='18px';nav.style.border='1px solid #e8e3d7';nav.style.borderRadius='18px';nav.style.flexDirection='column';}
-  })
+document.querySelector('.menu')?.addEventListener('click',()=>{
+ const n=document.querySelector('.links');
+ if(!n)return;
+ n.style.display=n.style.display==='flex'?'':'flex';
+ if(n.style.display==='flex'){n.style.position='absolute';n.style.top='76px';n.style.left='4%';n.style.right='4%';n.style.background='#f6f1e7';n.style.padding='18px';n.style.borderRadius='18px';n.style.flexDirection='column';n.style.border='1px solid #e6dfd1';}
 });
