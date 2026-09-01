@@ -1,11 +1,10 @@
-# نور شمال | الموقع العربي
+# Noor Shomal
+Static Arabic RTL multi-page tourism website.
 
-نسخة ثابتة جاهزة للنشر على GitHub Pages.
-
-- الصفحة الرئيسية: index.html
-- صفحات المدن: gilan.html / kelardasht.html / tehran.html / shiraz.html / isfahan.html / tabriz.html
-- جميع النصوص عربية RTL.
-- واتساب: +98 939 716 2609
-- إنستغرام: omidtravel.iran
-
-ملاحظة: الصور المستخدمة مرتبطة بمصادر صور/مواقع سياحية محددة وليست مولدات صور عشوائية.
+Main features:
+- Mobile-first responsive design
+- Hamburger menu with all site sections
+- Homepage focused on popular tours
+- Random content block powered by JavaScript
+- Tourism, treatment, stays, cars, destinations, articles and contact pages
+- SEO title/description on key pages
