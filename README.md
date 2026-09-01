@@ -1,10 +1,15 @@
-# Noor Shomal
-Static Arabic RTL multi-page tourism website.
+نور شمال - النسخة متعددة الطبقات
 
-Main features:
-- Mobile-first responsive design
-- Hamburger menu with all site sections
-- Homepage focused on popular tours
-- Random content block powered by JavaScript
-- Tourism, treatment, stays, cars, destinations, articles and contact pages
-- SEO title/description on key pages
+النسخة الجديدة تشمل:
+- صفحة رئيسية مركزة على البرامج الأكثر طلباً.
+- قائمة همبرغر للوصول إلى كل محتوى الموقع.
+- قسم عشوائي يعرض محتوى مختلفاً في كل زيارة.
+- عداد المسافرين من الخليج محدث إلى +10000.
+- صفحة فنادق مع مدن متعددة وزر طلب الحجز بعد كل فندق.
+- صفحة دليل الأكلات الإيرانية.
+- صفحة الصرافة وخدمات العملة، مع ظهورها في الصفحة الرئيسية.
+- صفحة علاجية موسعة تشرح الخدمات اللوجستية.
+- مجلة مقالات أطول وأكثر تنوعاً.
+- تصميم عربي RTL ومتجاوب مع الهاتف.
+
+للنشر على GitHub Pages: ارفع كل الملفات إلى المستودع نفسه، وتأكد أن index.html في الجذر.

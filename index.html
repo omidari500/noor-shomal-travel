@@ -1,84 +1,15 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>نور شمال | رحلات وسياحة وعلاج في إيران</title>
-<meta name="description" content="نور شمال لتنظيم الرحلات الخاصة في إيران، السياحة العلاجية، حجز الفنادق والفلل، السيارات مع سائق أو بدون سائق وخدمات للمسافرين العرب.">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header class="top">
-  <a class="brand" href="index.html"><span class="brand-mark">ن</span><span>نور شمال</span></a>
-  <button class="menu-btn" aria-label="فتح القائمة" onclick="toggleMenu()"><i></i><i></i><i></i></button>
-</header>
-
-<div id="menu" class="menu">
-  <button class="close" onclick="toggleMenu()">×</button>
-  <div class="menu-inner">
-    <div class="menu-title">استكشف نور شمال</div>
-    <a href="index.html">الرئيسية</a>
-    <a href="tourism.html">السياحة والرحلات</a>
-    <a href="treatment.html">السياحة العلاجية</a>
-    <a href="stays.html">الفنادق والفلل</a>
-    <a href="cars.html">السيارات والسائقون</a>
-    <a href="destinations.html">الوجهات السياحية</a>
-    <a href="articles.html">مجلة نور شمال</a>
-    <a href="contact.html">تواصل معنا</a>
-  </div>
-</div>
-
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>نور شمال | سياحة وعلاج وإقامة في إيران</title><meta name="description" content="نور شمال لتنظيم الرحلات الخاصة للمسافرين العرب في إيران، السياحة العلاجية، الفنادق والفلل، السيارات والسائقين، الصرافة والمحتوى السياحي."><link rel="stylesheet" href="style.css"></head><body>
+<header class="top"><a class="brand" href="index.html"><span class="brand-mark">ن</span><span>نور شمال</span></a><button class="menu-btn" aria-label="فتح القائمة" onclick="toggleMenu()"><i></i><i></i><i></i></button></header>
+<div id="menu" class="menu"><button class="close" onclick="toggleMenu()">×</button><div class="menu-inner"><div class="menu-title">استكشف كل خدمات نور شمال</div><a href="index.html">الرئيسية</a><a href="tourism.html">السياحة والرحلات</a><a href="treatment.html">السياحة العلاجية</a><a href="hotels.html">الفنادق والحجز</a><a href="foods.html">دليل الأكلات الإيرانية</a><a href="exchange.html">الصرافة وخدمات العملة</a><a href="cars.html">السيارات والسائقون</a><a href="destinations.html">الوجهات السياحية</a><a href="articles.html">مجلة نور شمال</a><a href="contact.html">تواصل معنا</a></div></div>
 <main>
-<section class="hero home-hero">
-  <div class="hero-copy">
-    <span class="eyebrow">رحلات خاصة للمسافرين العرب</span>
-    <h1>اكتشف إيران<br><em>بطريقتك</em></h1>
-    <p>برامج سياحية مخصصة، إقامة مريحة، سائقون يتحدثون العربية وخدمة منظمة من الوصول حتى العودة.</p>
-    <a class="btn" href="tourism.html">شاهد البرامج الأكثر طلباً</a>
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-head">
-    <div><span class="eyebrow">الأكثر طلباً</span><h2>برامج يحبها مسافرونا</h2></div>
-    <a href="tourism.html" class="text-link">كل البرامج ←</a>
-  </div>
-  <div class="cards">
-    <a class="tour-card" href="kelardasht.html">
-      <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1000&q=85" alt="طبيعة إيران">
-      <div><span>شمال إيران</span><h3>كلاردشت • رامسر • جيلان</h3><p>جبال وغابات وبحر وأجواء هادئة للعائلات.</p></div>
-    </a>
-    <a class="tour-card" href="shiraz.html">
-      <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=1000&q=85" alt="شيراز">
-      <div><span>ثقافة وتاريخ</span><h3>شيراز • أصفهان</h3><p>رحلة تجمع التاريخ والأسواق والحدائق والمطاعم.</p></div>
-    </a>
-    <a class="tour-card" href="tehran.html">
-      <img src="https://images.unsplash.com/photo-1575029641002-2c7e2f8a6d0d?auto=format&fit=crop&w=1000&q=85" alt="طهران">
-      <div><span>مدينة وحياة</span><h3>طهران • شمال إيران</h3><p>تجربة متوازنة بين المدينة والطبيعة.</p></div>
-    </a>
-  </div>
-</section>
-
-<section class="section random-section">
-  <div class="section-head">
-    <div><span class="eyebrow">كل زيارة مختلفة</span><h2>ماذا نختار لك اليوم؟</h2></div>
-    <button class="shuffle" onclick="showRandom()">تغيير المحتوى ↻</button>
-  </div>
-  <div id="randomContent" class="random-box"></div>
-</section>
-
-<section class="trust-strip">
-  <div><strong>10+</strong><span>سنوات خبرة</span></div>
-  <div><strong>1000+</strong><span>مسافر من الخليج</span></div>
-  <div><strong>24/7</strong><span>مساعدة ومتابعة</span></div>
-  <div><strong>عربي</strong><span>تواصل سهل</span></div>
-</section>
-</main>
-
-<footer>
-  <div><strong>نور شمال</strong><p>السياحة • العلاج • الإقامة • السيارات • الخدمات التجارية في إيران</p></div>
-  <a href="contact.html">تواصل معنا</a>
-</footer>
-<script src="script.js"></script>
-</body>
-</html>
+<section class="hero home-hero"><div class="hero-copy"><span class="eyebrow">رحلات خاصة للمسافرين العرب</span><h1>اكتشف إيران<br><em>بطريقتك</em></h1><p>برامج سياحية مخصصة، إقامة مريحة، سائق وخدمات لوجستية، مع إمكانية تنسيق العلاج والحجز والصرافة من خلال جهة واحدة.</p><a class="btn" href="tourism.html">شاهد البرامج الأكثر طلباً</a></div></section>
+<section class="section"><div class="section-head"><div><span class="eyebrow">الأكثر طلباً</span><h2>برامج يحبها مسافرونا</h2></div><a href="tourism.html" class="text-link">كل البرامج ←</a></div><div class="cards">
+<a class="tour-card" href="kelardasht.html"><img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1000&q=85" alt="طبيعة إيران"><div><span>شمال إيران</span><h3>كلاردشت • رامسر • جيلان</h3><p>جبال وغابات وبحر وأجواء هادئة للعائلات.</p></div></a>
+<a class="tour-card" href="shiraz.html"><img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=1000&q=85" alt="شيراز"><div><span>ثقافة وتاريخ</span><h3>شيراز • أصفهان</h3><p>رحلة تجمع التاريخ والأسواق والحدائق والمطاعم.</p></div></a>
+<a class="tour-card" href="tehran.html"><img src="https://images.unsplash.com/photo-1575029641002-2c7e2f8a6d0d?auto=format&fit=crop&w=1000&q=85" alt="طهران"><div><span>مدينة وحياة</span><h3>طهران • شمال إيران</h3><p>تجربة متوازنة بين المدينة والطبيعة.</p></div></a>
+</div></section>
+<section class="section" style="padding-top:0"><div class="exchange-home"><div><span class="eyebrow">خدمة جديدة على الصفحة الرئيسية</span><h2>الصرافة للمسافر العربي</h2><p>نساعدكم في تنسيق الوصول إلى صرافة مرخصة والاستفسار عن سعر الصرف قبل التنفيذ، مع توضيح السعر والعملة والعمولة عند الحاجة. أسعار الصرف تتغير باستمرار.</p><a class="btn" href="exchange.html">تفاصيل خدمة الصرافة ←</a></div><div class="exchange-points"><div><strong>استفسار</strong><span>عن سعر الصرف قبل التنفيذ</span></div><div><strong>تنسيق</strong><span>مع صرافة مرخصة</span></div><div><strong>وضوح</strong><span>في العملة والمبلغ</span></div><div><strong>للمسافر</strong><span>خدمة سهلة بالعربية</span></div></div></div></section>
+<section class="section random-section"><div class="section-head"><div><span class="eyebrow">كل زيارة مختلفة</span><h2>ماذا نختار لك اليوم؟</h2></div><button class="shuffle" onclick="showRandom()">تغيير المحتوى ↻</button></div><div id="randomContent" class="random-box"></div></section>
+<section class="trust-strip"><div><strong>10+</strong><span>سنوات خبرة</span></div><div><strong>+10000</strong><span>مسافر من الخليج</span></div><div><strong>24/7</strong><span>مساعدة ومتابعة</span></div><div><strong>عربي</strong><span>تواصل سهل</span></div></section>
+<section class="section"><div class="section-head"><div><span class="eyebrow">محتوى مفيد</span><h2>اكتشف إيران قبل السفر</h2></div><a href="articles.html" class="text-link">كل المقالات ←</a></div><div class="mini-grid"><a class="mini-card" href="foods.html"><h3>🍽️ الأكلات الإيرانية</h3><p>دليل طويل للأطباق الشعبية وما يستحق التجربة في كل مدينة.</p></a><a class="mini-card" href="hotels.html"><h3>🏨 أفضل الفنادق</h3><p>فنادق مختارة في أهم المدن مع زر طلب الحجز بعد كل فندق.</p></a><a class="mini-card" href="treatment.html"><h3>🏥 العلاج في إيران</h3><p>شرح أوضح للخدمات العلاجية والتنسيق اللوجستي قبل السفر.</p></a></div></section>
+</main><a class="wa-float" href="https://wa.me/989397162609">واتساب</a><footer><div><strong>نور شمال</strong><p>السياحة • العلاج • الإقامة • السيارات • الصرافة والخدمات في إيران</p></div><a href="contact.html">تواصل معنا</a></footer><script src="script.js"></script></body></html>
